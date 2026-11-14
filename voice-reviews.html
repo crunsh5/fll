@@ -1,0 +1,310 @@
+<style>
+.af{box-sizing:border-box;color:#241452}
+.af *,.af *::before,.af *::after{box-sizing:border-box;margin:0;padding:0;border:0 solid}
+.af img,.af svg,.af video,.af audio{display:block;max-width:100%}
+.af a{color:inherit;text-decoration:none}
+.af ul,.af ol{list-style:none}
+.af button,.af input{font:inherit;color:inherit;background:none}
+.af summary{list-style:none}
+.af summary::-webkit-details-marker{display:none}
+.af table{border-collapse:collapse}
+.af-ic{width:1em;height:1em;fill:currentColor;display:inline-block;vertical-align:-.15em;flex:none}
+.af h1,.af h2,.af h3,.af h4{font-weight:900;text-wrap:balance}
+.af p,.af li,.af td{text-wrap:pretty}
+.af .relative{position: relative}
+.af .-mx-4{margin-left: -1rem; margin-right: -1rem}
+.af .mx-auto{margin-left: auto; margin-right: auto}
+.af .-mt-4{margin-top: -1rem}
+.af .mb-3{margin-bottom: 0.75rem}
+.af .mb-4{margin-bottom: 1rem}
+.af .mb-6{margin-bottom: 1.5rem}
+.af .mt-1{margin-top: 0.25rem}
+.af .mt-3{margin-top: 0.75rem}
+.af .block{display: block}
+.af .flex{display: flex}
+.af .inline-flex{display: inline-flex}
+.af .h-12{height: 3rem}
+.af .h-14{height: 3.5rem}
+.af .w-14{width: 3.5rem}
+.af .w-\[70\%\]{width: 70%}
+.af .w-\[82\%\]{width: 82%}
+.af .min-w-0{min-width: 0px}
+.af .max-w-6xl{max-width: 72rem}
+.af .flex-1{flex: 1 1 0%}
+.af .flex-none{flex: 0 0 auto}
+.af .snap-x{scroll-snap-type: x var(--tw-scroll-snap-strictness)}
+.af .snap-mandatory{--tw-scroll-snap-strictness: mandatory}
+.af .snap-start{scroll-snap-align: start}
+.af .flex-col{flex-direction: column}
+.af .items-end{align-items: flex-end}
+.af .items-center{align-items: center}
+.af .justify-center{justify-content: center}
+.af .justify-between{justify-content: space-between}
+.af .gap-1{gap: 0.25rem}
+.af .gap-2{gap: 0.5rem}
+.af .gap-3{gap: 0.75rem}
+.af .gap-4{gap: 1rem}
+.af .gap-5{gap: 1.25rem}
+.af .gap-\[3px\]{gap: 3px}
+.af .self-start{align-self: flex-start}
+.af .overflow-hidden{overflow: hidden}
+.af .overflow-x-auto{overflow-x: auto}
+.af .whitespace-nowrap{white-space: nowrap}
+.af .rounded-full{border-radius: 9999px}
+.af .rounded-paper{border-radius: 32px}
+.af .border-2{border-width: 2px}
+.af .border-b-2{border-bottom-width: 2px}
+.af .border-paper-ink{--tw-border-opacity: 1; border-color: rgb(36 20 82 / var(--tw-border-opacity, 1))}
+.af .bg-paper-amber{--tw-bg-opacity: 1; background-color: rgb(248 136 0 / var(--tw-bg-opacity, 1))}
+.af .bg-paper-beige{--tw-bg-opacity: 1; background-color: rgb(243 239 233 / var(--tw-bg-opacity, 1))}
+.af .bg-paper-ink{--tw-bg-opacity: 1; background-color: rgb(36 20 82 / var(--tw-bg-opacity, 1))}
+.af .bg-paper-white{--tw-bg-opacity: 1; background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1))}
+.af .bg-primary-container{--tw-bg-opacity: 1; background-color: rgb(88 24 176 / var(--tw-bg-opacity, 1))}
+.af .p-2\.5{padding: 0.625rem}
+.af .p-5{padding: 1.25rem}
+.af .px-3{padding-left: 0.75rem; padding-right: 0.75rem}
+.af .px-4{padding-left: 1rem; padding-right: 1rem}
+.af .px-6{padding-left: 1.5rem; padding-right: 1.5rem}
+.af .py-1{padding-top: 0.25rem; padding-bottom: 0.25rem}
+.af .py-1\.5{padding-top: 0.375rem; padding-bottom: 0.375rem}
+.af .py-10{padding-top: 2.5rem; padding-bottom: 2.5rem}
+.af .pb-3{padding-bottom: 0.75rem}
+.af .pb-4{padding-bottom: 1rem}
+.af .pt-5{padding-top: 1.25rem}
+.af .align-middle{vertical-align: middle}
+.af .text-3xl{font-size: 1.875rem; line-height: 2.25rem}
+.af .text-\[1\.5rem\]{font-size: 1.5rem}
+.af .text-\[11px\]{font-size: 11px}
+.af .text-sm{font-size: 0.875rem; line-height: 1.25rem}
+.af .text-xl{font-size: 1.25rem; line-height: 1.75rem}
+.af .text-xs{font-size: 0.75rem; line-height: 1rem}
+.af .font-black{font-weight: 900}
+.af .font-bold{font-weight: 700}
+.af .leading-tight{line-height: 1.25}
+.af .text-paper-ink{--tw-text-opacity: 1; color: rgb(36 20 82 / var(--tw-text-opacity, 1))}
+.af .text-paper-ink\/60{color: rgba(36, 20, 82, 0.6)}
+.af .text-paper-ink\/70{color: rgba(36, 20, 82, 0.7)}
+.af .text-primary-container{--tw-text-opacity: 1; color: rgb(88 24 176 / var(--tw-text-opacity, 1))}
+.af .text-white{--tw-text-opacity: 1; color: rgb(255 255 255 / var(--tw-text-opacity, 1))}
+.af .shadow-paper{--tw-shadow: 4px 4px 0px 0px #241452; --tw-shadow-colored: 4px 4px 0px 0px var(--tw-shadow-color); box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}
+.af .shadow-paper-sm{--tw-shadow: 2px 2px 0px 0px #241452; --tw-shadow-colored: 2px 2px 0px 0px var(--tw-shadow-color); box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}
+@media (min-width: 640px){.af .sm\:w-\[46\%\]{width: 46%}}
+@media (min-width: 768px){.af .md\:order-2{order: 2}}
+@media (min-width: 768px){.af .md\:mx-0{margin-left: 0px; margin-right: 0px}}
+@media (min-width: 768px){.af .md\:grid{display: grid}}
+@media (min-width: 768px){.af .md\:hidden{display: none}}
+@media (min-width: 768px){.af .md\:w-\[31\%\]{width: 31%}}
+@media (min-width: 768px){.af .md\:w-auto{width: auto}}
+@media (min-width: 768px){.af .md\:flex-1{flex: 1 1 0%}}
+@media (min-width: 768px){.af .md\:grid-cols-3{grid-template-columns: repeat(3, minmax(0px, 1fr))}}
+@media (min-width: 768px){.af .md\:flex-row{flex-direction: row}}
+@media (min-width: 768px){.af .md\:flex-wrap{flex-wrap: wrap}}
+@media (min-width: 768px){.af .md\:items-center{align-items: center}}
+@media (min-width: 768px){.af .md\:justify-center{justify-content: center}}
+@media (min-width: 768px){.af .md\:justify-between{justify-content: space-between}}
+@media (min-width: 768px){.af .md\:gap-6{gap: 1.5rem}}
+@media (min-width: 768px){.af .md\:overflow-visible{overflow: visible}}
+@media (min-width: 768px){.af .md\:px-0{padding-left: 0px; padding-right: 0px}}
+@media (min-width: 768px){.af .md\:py-16{padding-top: 4rem; padding-bottom: 4rem}}
+@media (min-width: 768px){.af .md\:text-\[2\.25rem\]{font-size: 2.25rem}}
+@media (min-width: 768px){.af .md\:text-base{font-size: 1rem; line-height: 1.5rem}}
+@media (min-width: 768px){.af .md\:text-sm{font-size: 0.875rem; line-height: 1.25rem}}
+@media (min-width: 1024px){.af .lg\:w-\[23\%\]{width: 23%}}
+.af .af-ic{font-variation-settings: 'FILL' 0, 'wght' 600, 'GRAD' 0, 'opsz' 24; display: inline-block; vertical-align: middle; line-height: 1}
+.af .af-ic.fill-icon{font-variation-settings: 'FILL' 1, 'wght' 600, 'GRAD' 0, 'opsz' 24}
+.af a,.af button,.af label,.af summary,.af .vbtn{-webkit-tap-highlight-color:transparent}
+.af a[href],.af button,.af label[for],.af summary,.af .vbtn{transition:transform .12s ease,box-shadow .12s ease}
+.af a[href]:active,.af button:active,.af label[for]:active,.af summary:active,.af .vbtn:active{transform:scale(.96)}
+.af .pol:active{transform:rotate(0) scale(.97)}
+html{scroll-behavior:smooth}
+.af section[id]{scroll-margin-top:var(--hdr,84px)}
+.af .swipe-hint{display:inline-flex;align-items:center;gap:6px;background:#F88800;color:#241452;border:2px solid #241452;border-radius:999px;padding:4px 12px;font-size:12px;font-weight:800;white-space:nowrap;box-shadow:2px 2px 0 #241452}
+.af .swipe-hint .af-ic{font-size:18px;animation:swipe-nudge 1.4s ease-in-out infinite}
+@media(prefers-reduced-motion:reduce){.af .swipe-hint .af-ic{animation:none}}
+.af .board{background-image:radial-gradient(rgba(36,20,82,.14) 1px,transparent 1px);background-size:16px 16px}
+.af .pol{transform:rotate(var(--r)) translateY(var(--y));transition:transform .4s cubic-bezier(.2,.7,.2,1)}
+.af .pol:hover,.af .pol:focus-visible{transform:rotate(0) translateY(-10px);z-index:5}
+.af .pol:hover .pol-body{box-shadow:8px 8px 0 #241452}
+.af .tape{position:absolute;top:-13px;left:50%;width:86px;height:26px;transform:translateX(-50%) rotate(var(--tr));background:rgba(251,191,36,.88);border:1px solid rgba(36,20,82,.35);z-index:3;box-shadow:0 1px 0 rgba(36,20,82,.15)}
+.af .tape::before,.af .tape::after{content:"";position:absolute;top:0;bottom:0;width:6px;background:repeating-linear-gradient(to bottom,transparent 0 3px,rgba(243,239,233,.9) 3px 5px)}
+.af .tape::before{left:-1px}
+.af .tape::after{right:-1px}
+.af .pin{position:absolute;top:-10px;left:50%;transform:translateX(-50%);width:20px;height:20px;border-radius:50%;background:#5818B0;border:2px solid #241452;box-shadow:2px 3px 0 rgba(36,20,82,.35);z-index:3}
+.af .pin::after{content:"";position:absolute;top:4px;left:5px;width:5px;height:5px;border-radius:50%;background:rgba(255,255,255,.55)}
+.af .pol-win{position:relative;aspect-ratio:3/4;overflow:hidden;container-type:size}
+.af .pol-win img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top;display:block}
+
+.af .vwave i{flex:1;background:rgba(36,20,82,.18);border-radius:3px;transition:background .2s}
+.af .vwave i.on{background:#5818B0}
+.af .vc.playing .vbtn{background:#F88800;color:#241452}
+.af .vc.playing .vwave i:not(.on){animation:vbeat 1.1s ease-in-out infinite alternate}
+@media(prefers-reduced-motion:reduce){.af .vc.playing .vwave i{animation:none}}
+@media(max-width:359px){.af header .text-lg,.af header .font-bold{font-size:13px}}
+.af .no-scrollbar::-webkit-scrollbar{display:none}
+.af .no-scrollbar{-ms-overflow-style:none;scrollbar-width:none}
+@keyframes swipe-nudge{0%,100%{transform:translateX(0)}50%{transform:translateX(-5px)}}
+
+@keyframes vbeat{to{transform:scaleY(.6)}}
+@media(min-width:768px){.af .af-works-track{justify-content:flex-start}.af .af-work{width:272px!important;flex:none}}
+.af .af-works-track{scroll-padding-inline:8px}
+.af a[href*="wa.me"]:not(.wa-float){animation:af-order-pulse 2.6s ease-in-out infinite}
+@keyframes af-order-pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.03)}}
+@media(prefers-reduced-motion:reduce){.af a[href*="wa.me"]{animation:none}}
+.af a[href*="wa.me"]:active{animation:none;transform:scale(.96)}
+.af .af-sprite{position:absolute;width:0;height:0;overflow:hidden}
+</style>
+<div class="af" dir="rtl">
+<svg xmlns="http://www.w3.org/2000/svg" class="af-sprite" width="0" height="0" style="display:none" aria-hidden="true"><symbol id="af-ic-north_west" viewBox="0 -960 960 960"><path d="M744-160 280-624v264h-80v-400h400v80H336l464 464-56 56Z"/></symbol><symbol id="af-ic-pause" viewBox="0 -960 960 960"><path d="M520-200v-560h240v560H520Zm-320 0v-560h240v560H200Zm400-80h80v-400h-80v400Zm-320 0h80v-400h-80v400Zm0-400v400-400Zm320 0v400-400Z"/></symbol><symbol id="af-ic-play_arrow" viewBox="0 -960 960 960"><path d="M320-200v-560l440 280-440 280Zm80-280Zm0 134 210-134-210-134v268Z"/></symbol><symbol id="af-ic-swipe_left" viewBox="0 -960 960 960"><path d="M473-80q-24 0-46-9t-39-26L184-320l30-31q16-16 37.5-21.5t42.5.5l66 19v-327q0-17 11.5-28.5T400-720q17 0 28.5 11.5T440-680v433l-97-27 102 102q5 5 12.5 8.5T473-160h167q33 0 56.5-23.5T720-240v-160q0-17 11.5-28.5T760-440q17 0 28.5 11.5T800-400v160q0 66-47 113T640-80H473Zm7-280v-160q0-17 11.5-28.5T520-560q17 0 28.5 11.5T560-520v160h-80Zm120 0v-120q0-17 11.5-28.5T640-520q17 0 28.5 11.5T680-480v120h-80ZM80-680v-200h60v81q72-59 159-90t181-31q146 0 258 67t142 173h-63q-38-84-128.5-132T480-860q-88 0-169 31t-147 89h116v60H80Zm500 400Z"/></symbol><symbol id="af-ic-verified" viewBox="0 -960 960 960"><path d="m344-60-76-128-144-32 14-148-98-112 98-112-14-148 144-32 76-128 136 58 136-58 76 128 144 32-14 148 98 112-98 112 14 148-144 32-76 128-136-58-136 58Zm34-102 102-44 104 44 56-96 110-26-10-112 74-84-74-86 10-112-110-24-58-96-102 44-104-44-56 96-110 24 10 112-74 86 74 84-10 114 110 24 58 96Zm102-318Zm-42 142 226-226-56-58-170 170-86-84-56 56 142 142Z"/></symbol></svg>
+<section class="py-10 md:py-16 bg-paper-beige border-b-2 border-paper-ink board overflow-hidden" id="portfolio">
+<div class="max-w-6xl mx-auto px-4">
+<div class="flex flex-col md:flex-row md:items-center md:justify-between gap-3 mb-6">
+<span class="self-start md:order-2 bg-primary-container text-white border-2 border-paper-ink rounded-full px-4 py-1.5 text-xs md:text-sm font-bold whitespace-nowrap">+300 متجر</span>
+<div><h2 class="font-black text-paper-ink text-[1.5rem] md:text-[2.25rem] leading-tight whitespace-nowrap">من أعمالنا</h2><p class="text-paper-ink/70 text-sm md:text-base font-bold mt-1">اضغط أي متجر وزره مباشرة.</p></div>
+</div>
+<div class="-mt-4 mb-3"><span class="swipe-hint"><svg class="af-ic"><use href="#af-ic-swipe_left"/></svg>اسحب يسار</span></div>
+<div class="flex gap-5 md:gap-6 overflow-x-auto no-scrollbar snap-x snap-mandatory pt-5 pb-4 -mx-4 px-6 md:mx-0 md:px-2 af-works-track">
+<a href="https://panda16.com/ar" target="_blank" rel="noopener" class="pol snap-start flex-none w-[70%] sm:w-[46%] md:w-[31%] lg:w-[23%] af-work relative block" style="--r:0.9deg;--y:7px;--i:0">
+<span class="tape" style="--tr:-1.7deg"></span>
+<div class="pol-body bg-paper-white border-2 border-paper-ink shadow-paper p-2.5 pb-3">
+<div class="pol-win border-2 border-paper-ink bg-paper-ink"><img src="https://cdn.jsdelivr.net/gh/crunsh5/fll/store-1.jpg" width="640" height="853" alt="تصميم متجر باندا على سلة من أعمال أد فلو" loading="lazy"></div>
+<div class="mt-3 flex items-center justify-between gap-2">
+<div class="min-w-0"><div class="font-black text-paper-ink text-sm md:text-base leading-tight whitespace-nowrap">باندا</div><div class="text-[11px] font-bold text-paper-ink/60 whitespace-nowrap">متجر سلة</div></div>
+<span class="flex-none inline-flex items-center gap-1 bg-paper-amber text-paper-ink border-2 border-paper-ink rounded-full px-3 py-1 text-[11px] font-bold whitespace-nowrap">زور المتجر <svg class="af-ic text-sm"><use href="#af-ic-north_west"/></svg></span>
+</div>
+</div></a><a href="https://0zer.com/ar" target="_blank" rel="noopener" class="pol snap-start flex-none w-[70%] sm:w-[46%] md:w-[31%] lg:w-[23%] af-work relative block" style="--r:1.3deg;--y:9px;--i:1">
+<span class="tape" style="--tr:2.9deg"></span>
+<div class="pol-body bg-paper-white border-2 border-paper-ink shadow-paper p-2.5 pb-3">
+<div class="pol-win border-2 border-paper-ink bg-paper-ink"><img src="https://cdn.jsdelivr.net/gh/crunsh5/fll/store-2.jpg" width="640" height="853" alt="تصميم متجر زيرو على سلة من أعمال أد فلو" loading="lazy"></div>
+<div class="mt-3 flex items-center justify-between gap-2">
+<div class="min-w-0"><div class="font-black text-paper-ink text-sm md:text-base leading-tight whitespace-nowrap">زيرو</div><div class="text-[11px] font-bold text-paper-ink/60 whitespace-nowrap">متجر سلة</div></div>
+<span class="flex-none inline-flex items-center gap-1 bg-paper-amber text-paper-ink border-2 border-paper-ink rounded-full px-3 py-1 text-[11px] font-bold whitespace-nowrap">زور المتجر <svg class="af-ic text-sm"><use href="#af-ic-north_west"/></svg></span>
+</div>
+</div></a><a href="https://sahtain-sa.com/" target="_blank" rel="noopener" class="pol snap-start flex-none w-[70%] sm:w-[46%] md:w-[31%] lg:w-[23%] af-work relative block" style="--r:3.0deg;--y:-4px;--i:2">
+<span class="pin"></span>
+<div class="pol-body bg-paper-white border-2 border-paper-ink shadow-paper p-2.5 pb-3">
+<div class="pol-win border-2 border-paper-ink bg-paper-ink"><img src="https://cdn.jsdelivr.net/gh/crunsh5/fll/store-3.jpg" width="640" height="853" alt="تصميم متجر صحتين على سلة من أعمال أد فلو" loading="lazy"></div>
+<div class="mt-3 flex items-center justify-between gap-2">
+<div class="min-w-0"><div class="font-black text-paper-ink text-sm md:text-base leading-tight whitespace-nowrap">صحتين</div><div class="text-[11px] font-bold text-paper-ink/60 whitespace-nowrap">متجر سلة</div></div>
+<span class="flex-none inline-flex items-center gap-1 bg-paper-amber text-paper-ink border-2 border-paper-ink rounded-full px-3 py-1 text-[11px] font-bold whitespace-nowrap">زور المتجر <svg class="af-ic text-sm"><use href="#af-ic-north_west"/></svg></span>
+</div>
+</div></a><a href="https://tazplus-sa.com" target="_blank" rel="noopener" class="pol snap-start flex-none w-[70%] sm:w-[46%] md:w-[31%] lg:w-[23%] af-work relative block" style="--r:2.4deg;--y:8px;--i:3">
+<span class="tape" style="--tr:5.3deg"></span>
+<div class="pol-body bg-paper-white border-2 border-paper-ink shadow-paper p-2.5 pb-3">
+<div class="pol-win border-2 border-paper-ink bg-paper-ink"><img src="https://cdn.jsdelivr.net/gh/crunsh5/fll/store-4.jpg" width="640" height="853" alt="تصميم متجر تاز بلس على سلة من أعمال أد فلو" loading="lazy"></div>
+<div class="mt-3 flex items-center justify-between gap-2">
+<div class="min-w-0"><div class="font-black text-paper-ink text-sm md:text-base leading-tight whitespace-nowrap">تاز بلس</div><div class="text-[11px] font-bold text-paper-ink/60 whitespace-nowrap">متجر سلة</div></div>
+<span class="flex-none inline-flex items-center gap-1 bg-paper-amber text-paper-ink border-2 border-paper-ink rounded-full px-3 py-1 text-[11px] font-bold whitespace-nowrap">زور المتجر <svg class="af-ic text-sm"><use href="#af-ic-north_west"/></svg></span>
+</div>
+</div></a><a href="https://sola-plus.com" target="_blank" rel="noopener" class="pol snap-start flex-none w-[70%] sm:w-[46%] md:w-[31%] lg:w-[23%] af-work relative block" style="--r:1.0deg;--y:10px;--i:4">
+<span class="tape" style="--tr:-4.1deg"></span>
+<div class="pol-body bg-paper-white border-2 border-paper-ink shadow-paper p-2.5 pb-3">
+<div class="pol-win border-2 border-paper-ink bg-paper-ink"><img src="https://cdn.jsdelivr.net/gh/crunsh5/fll/store-5.jpg" width="640" height="853" alt="تصميم متجر سولا بلس على سلة من أعمال أد فلو" loading="lazy"></div>
+<div class="mt-3 flex items-center justify-between gap-2">
+<div class="min-w-0"><div class="font-black text-paper-ink text-sm md:text-base leading-tight whitespace-nowrap">سولا بلس</div><div class="text-[11px] font-bold text-paper-ink/60 whitespace-nowrap">متجر سلة</div></div>
+<span class="flex-none inline-flex items-center gap-1 bg-paper-amber text-paper-ink border-2 border-paper-ink rounded-full px-3 py-1 text-[11px] font-bold whitespace-nowrap">زور المتجر <svg class="af-ic text-sm"><use href="#af-ic-north_west"/></svg></span>
+</div>
+</div></a><a href="https://error-100.com/" target="_blank" rel="noopener" class="pol snap-start flex-none w-[70%] sm:w-[46%] md:w-[31%] lg:w-[23%] af-work relative block" style="--r:-0.9deg;--y:9px;--i:5">
+<span class="pin"></span>
+<div class="pol-body bg-paper-white border-2 border-paper-ink shadow-paper p-2.5 pb-3">
+<div class="pol-win border-2 border-paper-ink bg-paper-ink"><img src="https://cdn.jsdelivr.net/gh/crunsh5/fll/store-6.jpg" width="640" height="853" alt="تصميم متجر ايرور بلس على سلة من أعمال أد فلو" loading="lazy"></div>
+<div class="mt-3 flex items-center justify-between gap-2">
+<div class="min-w-0"><div class="font-black text-paper-ink text-sm md:text-base leading-tight whitespace-nowrap">ايرور بلس</div><div class="text-[11px] font-bold text-paper-ink/60 whitespace-nowrap">متجر سلة</div></div>
+<span class="flex-none inline-flex items-center gap-1 bg-paper-amber text-paper-ink border-2 border-paper-ink rounded-full px-3 py-1 text-[11px] font-bold whitespace-nowrap">زور المتجر <svg class="af-ic text-sm"><use href="#af-ic-north_west"/></svg></span>
+</div>
+</div></a><a href="https://nopel-sa.tech" target="_blank" rel="noopener" class="pol snap-start flex-none w-[70%] sm:w-[46%] md:w-[31%] lg:w-[23%] af-work relative block" style="--r:-1.8deg;--y:4px;--i:6">
+<span class="tape" style="--tr:-4.8deg"></span>
+<div class="pol-body bg-paper-white border-2 border-paper-ink shadow-paper p-2.5 pb-3">
+<div class="pol-win border-2 border-paper-ink bg-paper-ink"><img src="https://cdn.jsdelivr.net/gh/crunsh5/fll/store-7.jpg" width="640" height="853" alt="تصميم متجر نوبل ستور على ووردبريس من أعمال أد فلو" loading="lazy"></div>
+<div class="mt-3 flex items-center justify-between gap-2">
+<div class="min-w-0"><div class="font-black text-paper-ink text-sm md:text-base leading-tight whitespace-nowrap">نوبل ستور</div><div class="text-[11px] font-bold text-paper-ink/60 whitespace-nowrap">متجر ووردبريس</div></div>
+<span class="flex-none inline-flex items-center gap-1 bg-paper-amber text-paper-ink border-2 border-paper-ink rounded-full px-3 py-1 text-[11px] font-bold whitespace-nowrap">زور المتجر <svg class="af-ic text-sm"><use href="#af-ic-north_west"/></svg></span>
+</div>
+</div></a><a href="https://crunsh5.com" target="_blank" rel="noopener" class="pol snap-start flex-none w-[70%] sm:w-[46%] md:w-[31%] lg:w-[23%] af-work relative block" style="--r:-1.8deg;--y:7px;--i:7">
+<span class="tape" style="--tr:-3.4deg"></span>
+<div class="pol-body bg-paper-white border-2 border-paper-ink shadow-paper p-2.5 pb-3">
+<div class="pol-win border-2 border-paper-ink bg-paper-ink"><img src="https://cdn.jsdelivr.net/gh/crunsh5/fll/store-8.jpg" width="640" height="853" alt="تصميم متجر كرانش بلس على سلة من أعمال أد فلو" loading="lazy"></div>
+<div class="mt-3 flex items-center justify-between gap-2">
+<div class="min-w-0"><div class="font-black text-paper-ink text-sm md:text-base leading-tight whitespace-nowrap">كرانش بلس</div><div class="text-[11px] font-bold text-paper-ink/60 whitespace-nowrap">متجر سلة</div></div>
+<span class="flex-none inline-flex items-center gap-1 bg-paper-amber text-paper-ink border-2 border-paper-ink rounded-full px-3 py-1 text-[11px] font-bold whitespace-nowrap">زور المتجر <svg class="af-ic text-sm"><use href="#af-ic-north_west"/></svg></span>
+</div>
+</div></a>
+<a href="https://1hno.com" target="_blank" rel="noopener" class="pol snap-start flex-none w-[70%] sm:w-[46%] md:w-[31%] lg:w-[23%] af-work relative block" style="--r:2.4deg;--y:3px;--i:8">
+<span class="tape" style="--tr:4.5deg"></span>
+<div class="pol-body bg-paper-white border-2 border-paper-ink shadow-paper p-2.5 pb-3">
+<div class="pol-win border-2 border-paper-ink bg-paper-ink"><img src="https://cdn.jsdelivr.net/gh/crunsh5/fll/store-9.jpg" width="640" height="853" alt="تصميم متجر هنو ستور على سلة من أعمال أد فلو" loading="lazy"></div>
+<div class="mt-3 flex items-center justify-between gap-2">
+<div class="min-w-0"><div class="font-black text-paper-ink text-sm md:text-base leading-tight whitespace-nowrap">هنو ستور</div><div class="text-[11px] font-bold text-paper-ink/60 whitespace-nowrap">متجر سلة</div></div>
+<span class="flex-none inline-flex items-center gap-1 bg-paper-amber text-paper-ink border-2 border-paper-ink rounded-full px-3 py-1 text-[11px] font-bold whitespace-nowrap">زور المتجر <svg class="af-ic text-sm"><use href="#af-ic-north_west"/></svg></span>
+</div>
+</div></a>
+</div>
+</div>
+</section>
+<section class="py-10 md:py-16 bg-paper-white border-b-2 border-paper-ink" id="testimonials">
+<div class="max-w-6xl mx-auto px-4">
+<div class="flex flex-col md:flex-row md:items-center md:justify-between gap-3 mb-6">
+<span class="self-start md:order-2 bg-paper-amber text-paper-ink border-2 border-paper-ink rounded-full px-4 py-1.5 text-xs md:text-sm font-bold whitespace-nowrap">بصوتهم لا بكلامنا</span>
+<h2 class="font-black text-paper-ink text-[1.5rem] md:text-[2.25rem] leading-tight whitespace-nowrap">وش قالوا عنا</h2>
+</div>
+<div class="md:hidden -mt-4 mb-4"><span class="swipe-hint md:hidden"><svg class="af-ic"><use href="#af-ic-swipe_left"/></svg>اسحب يسار</span></div>
+<div class="flex gap-4 md:gap-6 overflow-x-auto md:overflow-visible no-scrollbar snap-x snap-mandatory pb-3 -mx-4 px-4 md:mx-0 md:px-0 md:grid md:grid-cols-3">
+<div class="vc snap-start flex-none w-[82%] md:w-auto md:flex-1 bg-paper-beige rounded-paper border-2 border-paper-ink shadow-paper p-5 flex flex-col gap-4">
+<div class="flex items-center justify-between">
+<span class="text-xs font-bold px-3 py-1 bg-paper-white rounded-full border-2 border-paper-ink whitespace-nowrap">تقييم صوتي</span>
+<span class="text-primary-container"><svg class="af-ic text-xl align-middle"><use href="#af-ic-verified"/></svg></span>
+</div>
+<div class="flex items-center gap-3">
+<button type="button" onclick="var c=this.closest('.vc'),a=c.querySelector('audio');if(a.paused){document.querySelectorAll('#testimonials audio').forEach(function(o){if(o!==a)o.pause()});a.play()}else{a.pause()}" class="vbtn w-14 h-14 flex-none rounded-full bg-primary-container text-white border-2 border-paper-ink shadow-paper-sm flex items-center justify-center" aria-label="تشغيل التقييم"><svg class="af-ic text-3xl  vicon" data-ic="play_arrow"><use href="#af-ic-play_arrow"/></svg></button>
+<div class="vwave flex-1 h-12 flex items-end gap-[3px]"><i style="height:61%"></i><i style="height:39%"></i><i style="height:70%"></i><i style="height:26%"></i><i style="height:29%"></i><i style="height:88%"></i><i style="height:32%"></i><i style="height:66%"></i><i style="height:94%"></i><i style="height:27%"></i><i style="height:84%"></i><i style="height:47%"></i><i style="height:24%"></i><i style="height:31%"></i><i style="height:75%"></i><i style="height:73%"></i><i style="height:28%"></i><i style="height:50%"></i><i style="height:31%"></i><i style="height:90%"></i><i style="height:74%"></i><i style="height:27%"></i><i style="height:92%"></i><i style="height:35%"></i><i style="height:48%"></i><i style="height:100%"></i><i style="height:100%"></i><i style="height:94%"></i></div>
+</div>
+<div class="flex items-center justify-between text-xs font-bold text-paper-ink/70"><span>عميل أد فلو</span><span class="vtime" data-dur="0:35">0:35</span></div>
+<audio preload="none" onplay="var c=this.closest('.vc');c.classList.add('playing');c.querySelector('.vicon').innerHTML='<use href=&quot;#af-ic-pause&quot;/>'" onpause="var c=this.closest('.vc');c.classList.remove('playing');c.querySelector('.vicon').innerHTML='<use href=&quot;#af-ic-play_arrow&quot;/>'" ontimeupdate="var c=this.closest('.vc'),b=c.querySelectorAll('.vwave i'),p=this.duration?this.currentTime/this.duration:0,t=c.querySelector('.vtime'),x=Math.floor(this.currentTime);b.forEach(function(i,k){i.classList.toggle('on',k/b.length<p)});t.textContent=Math.floor(x/60)+':'+('0'+x%60).slice(-2)+' / '+t.getAttribute('data-dur')" onended="var c=this.closest('.vc'),t=c.querySelector('.vtime');c.querySelectorAll('.vwave i').forEach(function(i){i.classList.remove('on')});t.textContent=t.getAttribute('data-dur')" src="https://cdn.jsdelivr.net/gh/crunsh5/fll/review-1.m4a"></audio>
+</div><div class="vc snap-start flex-none w-[82%] md:w-auto md:flex-1 bg-paper-beige rounded-paper border-2 border-paper-ink shadow-paper p-5 flex flex-col gap-4">
+<div class="flex items-center justify-between">
+<span class="text-xs font-bold px-3 py-1 bg-paper-white rounded-full border-2 border-paper-ink whitespace-nowrap">تقييم صوتي</span>
+<span class="text-primary-container"><svg class="af-ic text-xl align-middle"><use href="#af-ic-verified"/></svg></span>
+</div>
+<div class="flex items-center gap-3">
+<button type="button" onclick="var c=this.closest('.vc'),a=c.querySelector('audio');if(a.paused){document.querySelectorAll('#testimonials audio').forEach(function(o){if(o!==a)o.pause()});a.play()}else{a.pause()}" class="vbtn w-14 h-14 flex-none rounded-full bg-primary-container text-white border-2 border-paper-ink shadow-paper-sm flex items-center justify-center" aria-label="تشغيل التقييم"><svg class="af-ic text-3xl  vicon" data-ic="play_arrow"><use href="#af-ic-play_arrow"/></svg></button>
+<div class="vwave flex-1 h-12 flex items-end gap-[3px]"><i style="height:27%"></i><i style="height:93%"></i><i style="height:94%"></i><i style="height:70%"></i><i style="height:26%"></i><i style="height:48%"></i><i style="height:25%"></i><i style="height:91%"></i><i style="height:37%"></i><i style="height:57%"></i><i style="height:73%"></i><i style="height:38%"></i><i style="height:89%"></i><i style="height:35%"></i><i style="height:93%"></i><i style="height:59%"></i><i style="height:91%"></i><i style="height:43%"></i><i style="height:33%"></i><i style="height:94%"></i><i style="height:93%"></i><i style="height:44%"></i><i style="height:67%"></i><i style="height:32%"></i><i style="height:90%"></i><i style="height:28%"></i><i style="height:92%"></i><i style="height:27%"></i></div>
+</div>
+<div class="flex items-center justify-between text-xs font-bold text-paper-ink/70"><span>عميل أد فلو</span><span class="vtime" data-dur="0:59">0:59</span></div>
+<audio preload="none" onplay="var c=this.closest('.vc');c.classList.add('playing');c.querySelector('.vicon').innerHTML='<use href=&quot;#af-ic-pause&quot;/>'" onpause="var c=this.closest('.vc');c.classList.remove('playing');c.querySelector('.vicon').innerHTML='<use href=&quot;#af-ic-play_arrow&quot;/>'" ontimeupdate="var c=this.closest('.vc'),b=c.querySelectorAll('.vwave i'),p=this.duration?this.currentTime/this.duration:0,t=c.querySelector('.vtime'),x=Math.floor(this.currentTime);b.forEach(function(i,k){i.classList.toggle('on',k/b.length<p)});t.textContent=Math.floor(x/60)+':'+('0'+x%60).slice(-2)+' / '+t.getAttribute('data-dur')" onended="var c=this.closest('.vc'),t=c.querySelector('.vtime');c.querySelectorAll('.vwave i').forEach(function(i){i.classList.remove('on')});t.textContent=t.getAttribute('data-dur')" src="https://cdn.jsdelivr.net/gh/crunsh5/fll/review-2.m4a"></audio>
+</div><div class="vc snap-start flex-none w-[82%] md:w-auto md:flex-1 bg-paper-beige rounded-paper border-2 border-paper-ink shadow-paper p-5 flex flex-col gap-4">
+<div class="flex items-center justify-between">
+<span class="text-xs font-bold px-3 py-1 bg-paper-white rounded-full border-2 border-paper-ink whitespace-nowrap">تقييم صوتي</span>
+<span class="text-primary-container"><svg class="af-ic text-xl align-middle"><use href="#af-ic-verified"/></svg></span>
+</div>
+<div class="flex items-center gap-3">
+<button type="button" onclick="var c=this.closest('.vc'),a=c.querySelector('audio');if(a.paused){document.querySelectorAll('#testimonials audio').forEach(function(o){if(o!==a)o.pause()});a.play()}else{a.pause()}" class="vbtn w-14 h-14 flex-none rounded-full bg-primary-container text-white border-2 border-paper-ink shadow-paper-sm flex items-center justify-center" aria-label="تشغيل التقييم"><svg class="af-ic text-3xl  vicon" data-ic="play_arrow"><use href="#af-ic-play_arrow"/></svg></button>
+<div class="vwave flex-1 h-12 flex items-end gap-[3px]"><i style="height:99%"></i><i style="height:46%"></i><i style="height:83%"></i><i style="height:88%"></i><i style="height:74%"></i><i style="height:60%"></i><i style="height:79%"></i><i style="height:94%"></i><i style="height:78%"></i><i style="height:66%"></i><i style="height:58%"></i><i style="height:51%"></i><i style="height:43%"></i><i style="height:51%"></i><i style="height:30%"></i><i style="height:93%"></i><i style="height:58%"></i><i style="height:87%"></i><i style="height:83%"></i><i style="height:63%"></i><i style="height:77%"></i><i style="height:56%"></i><i style="height:97%"></i><i style="height:29%"></i><i style="height:35%"></i><i style="height:85%"></i><i style="height:73%"></i><i style="height:41%"></i></div>
+</div>
+<div class="flex items-center justify-between text-xs font-bold text-paper-ink/70"><span>عميل أد فلو</span><span class="vtime" data-dur="1:27">1:27</span></div>
+<audio preload="none" onplay="var c=this.closest('.vc');c.classList.add('playing');c.querySelector('.vicon').innerHTML='<use href=&quot;#af-ic-pause&quot;/>'" onpause="var c=this.closest('.vc');c.classList.remove('playing');c.querySelector('.vicon').innerHTML='<use href=&quot;#af-ic-play_arrow&quot;/>'" ontimeupdate="var c=this.closest('.vc'),b=c.querySelectorAll('.vwave i'),p=this.duration?this.currentTime/this.duration:0,t=c.querySelector('.vtime'),x=Math.floor(this.currentTime);b.forEach(function(i,k){i.classList.toggle('on',k/b.length<p)});t.textContent=Math.floor(x/60)+':'+('0'+x%60).slice(-2)+' / '+t.getAttribute('data-dur')" onended="var c=this.closest('.vc'),t=c.querySelector('.vtime');c.querySelectorAll('.vwave i').forEach(function(i){i.classList.remove('on')});t.textContent=t.getAttribute('data-dur')" src="https://cdn.jsdelivr.net/gh/crunsh5/fll/review-3.m4a"></audio>
+</div><div class="vc snap-start flex-none w-[82%] md:w-auto md:flex-1 bg-paper-beige rounded-paper border-2 border-paper-ink shadow-paper p-5 flex flex-col gap-4">
+<div class="flex items-center justify-between">
+<span class="text-xs font-bold px-3 py-1 bg-paper-white rounded-full border-2 border-paper-ink whitespace-nowrap">تقييم صوتي</span>
+<span class="text-primary-container"><svg class="af-ic text-xl align-middle"><use href="#af-ic-verified"/></svg></span>
+</div>
+<div class="flex items-center gap-3">
+<button type="button" onclick="var c=this.closest('.vc'),a=c.querySelector('audio');if(a.paused){document.querySelectorAll('#testimonials audio').forEach(function(o){if(o!==a)o.pause()});a.play()}else{a.pause()}" class="vbtn w-14 h-14 flex-none rounded-full bg-primary-container text-white border-2 border-paper-ink shadow-paper-sm flex items-center justify-center" aria-label="تشغيل التقييم"><svg class="af-ic text-3xl  vicon" data-ic="play_arrow"><use href="#af-ic-play_arrow"/></svg></button>
+<div class="vwave flex-1 h-12 flex items-end gap-[3px]"><i style="height:63%"></i><i style="height:39%"></i><i style="height:82%"></i><i style="height:73%"></i><i style="height:25%"></i><i style="height:29%"></i><i style="height:91%"></i><i style="height:93%"></i><i style="height:60%"></i><i style="height:63%"></i><i style="height:64%"></i><i style="height:96%"></i><i style="height:83%"></i><i style="height:94%"></i><i style="height:78%"></i><i style="height:28%"></i><i style="height:31%"></i><i style="height:54%"></i><i style="height:80%"></i><i style="height:28%"></i><i style="height:27%"></i><i style="height:59%"></i><i style="height:93%"></i><i style="height:77%"></i><i style="height:56%"></i><i style="height:69%"></i><i style="height:64%"></i><i style="height:22%"></i></div>
+</div>
+<div class="flex items-center justify-between text-xs font-bold text-paper-ink/70"><span>عميل أد فلو</span><span class="vtime" data-dur="1:27">1:27</span></div>
+<audio preload="none" onplay="var c=this.closest('.vc');c.classList.add('playing');c.querySelector('.vicon').innerHTML='<use href=&quot;#af-ic-pause&quot;/>'" onpause="var c=this.closest('.vc');c.classList.remove('playing');c.querySelector('.vicon').innerHTML='<use href=&quot;#af-ic-play_arrow&quot;/>'" ontimeupdate="var c=this.closest('.vc'),b=c.querySelectorAll('.vwave i'),p=this.duration?this.currentTime/this.duration:0,t=c.querySelector('.vtime'),x=Math.floor(this.currentTime);b.forEach(function(i,k){i.classList.toggle('on',k/b.length<p)});t.textContent=Math.floor(x/60)+':'+('0'+x%60).slice(-2)+' / '+t.getAttribute('data-dur')" onended="var c=this.closest('.vc'),t=c.querySelector('.vtime');c.querySelectorAll('.vwave i').forEach(function(i){i.classList.remove('on')});t.textContent=t.getAttribute('data-dur')" src="https://cdn.jsdelivr.net/gh/crunsh5/fll/review-4.m4a"></audio>
+</div><div class="vc snap-start flex-none w-[82%] md:w-auto md:flex-1 bg-paper-beige rounded-paper border-2 border-paper-ink shadow-paper p-5 flex flex-col gap-4">
+<div class="flex items-center justify-between">
+<span class="text-xs font-bold px-3 py-1 bg-paper-white rounded-full border-2 border-paper-ink whitespace-nowrap">تقييم صوتي</span>
+<span class="text-primary-container"><svg class="af-ic text-xl align-middle"><use href="#af-ic-verified"/></svg></span>
+</div>
+<div class="flex items-center gap-3">
+<button type="button" onclick="var c=this.closest('.vc'),a=c.querySelector('audio');if(a.paused){document.querySelectorAll('#testimonials audio').forEach(function(o){if(o!==a)o.pause()});a.play()}else{a.pause()}" class="vbtn w-14 h-14 flex-none rounded-full bg-primary-container text-white border-2 border-paper-ink shadow-paper-sm flex items-center justify-center" aria-label="تشغيل التقييم"><svg class="af-ic text-3xl  vicon" data-ic="play_arrow"><use href="#af-ic-play_arrow"/></svg></button>
+<div class="vwave flex-1 h-12 flex items-end gap-[3px]"><i style="height:79%"></i><i style="height:65%"></i><i style="height:41%"></i><i style="height:98%"></i><i style="height:34%"></i><i style="height:83%"></i><i style="height:27%"></i><i style="height:47%"></i><i style="height:56%"></i><i style="height:36%"></i><i style="height:51%"></i><i style="height:70%"></i><i style="height:70%"></i><i style="height:83%"></i><i style="height:30%"></i><i style="height:41%"></i><i style="height:77%"></i><i style="height:71%"></i><i style="height:90%"></i><i style="height:55%"></i><i style="height:37%"></i><i style="height:75%"></i><i style="height:90%"></i><i style="height:55%"></i><i style="height:73%"></i><i style="height:65%"></i><i style="height:68%"></i><i style="height:49%"></i></div>
+</div>
+<div class="flex items-center justify-between text-xs font-bold text-paper-ink/70"><span>عميل أد فلو</span><span class="vtime" data-dur="0:43">0:43</span></div>
+<audio preload="none" onplay="var c=this.closest('.vc');c.classList.add('playing');c.querySelector('.vicon').innerHTML='<use href=&quot;#af-ic-pause&quot;/>'" onpause="var c=this.closest('.vc');c.classList.remove('playing');c.querySelector('.vicon').innerHTML='<use href=&quot;#af-ic-play_arrow&quot;/>'" ontimeupdate="var c=this.closest('.vc'),b=c.querySelectorAll('.vwave i'),p=this.duration?this.currentTime/this.duration:0,t=c.querySelector('.vtime'),x=Math.floor(this.currentTime);b.forEach(function(i,k){i.classList.toggle('on',k/b.length<p)});t.textContent=Math.floor(x/60)+':'+('0'+x%60).slice(-2)+' / '+t.getAttribute('data-dur')" onended="var c=this.closest('.vc'),t=c.querySelector('.vtime');c.querySelectorAll('.vwave i').forEach(function(i){i.classList.remove('on')});t.textContent=t.getAttribute('data-dur')" src="https://cdn.jsdelivr.net/gh/crunsh5/fll/review-5.m4a"></audio>
+</div>
+</div>
+</div>
+</section>
+</div>
